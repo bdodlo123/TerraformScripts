@@ -21,6 +21,7 @@ variable "root_prefix" {
 # TAGs
 ###################################################
 variable "customer"{
-type = string
+type      = string
+default   = "org"
 }
 
