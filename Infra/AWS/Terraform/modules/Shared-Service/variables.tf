@@ -22,6 +22,6 @@ variable "root_prefix" {
 ###################################################
 variable "customer"{
 type      = string
-default   = "org"
+default   = ""
 }
 
