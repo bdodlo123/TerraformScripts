@@ -1,6 +1,6 @@
 variable "route53_zone" {
   type        = bool
-  default     = false
+  default     = true
   description = "If AWS transit gateway should be provisioned or not?"
 }
 ###################################################
