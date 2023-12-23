@@ -26,17 +26,7 @@ locals {
 
 
   }
-  tags = {
-    Customer           = var.customer
-    Category           = var.category
-    BusinessUnit       = var.business_unit
-    ApplicationName    = var.applicationname
-    DataClassification = var.data_classification
-    ApproverName       = var.approver_name
-    Environment        = var.environment
-    OwnerName          = var.owner_name
-    Contact            = var.contact
-  }
+
 }
 
 #--------------------------------------------------------------------
@@ -47,7 +37,7 @@ module "route53_zone" {
   source    = "../../Resources/Route53_Zone"
   count     = local.feature_flags.route53_zone == true ? 1 : 0
   zone_name = local.resource_names.route53_zone_name
-  tags      = local.tags
+  #tags      = local.tags
   #tags      = merge({ "ResourceName" = format("%s", local.resource_names.route53_zone_name) }, local.tags)
 }
 
