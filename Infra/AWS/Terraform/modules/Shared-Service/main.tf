@@ -18,7 +18,7 @@ provider "aws" {
 
 locals {
   resource_names = {
-    route53_zone_name = lower(join(".", [var.zone_name, var.customer, var.root_prefix]))
+    route53_zone_name = lower(join(" ", [var.zone_name, var.customer, var.root_prefix]))
   }
 
   feature_flags = {
