@@ -20,35 +20,5 @@ variable "root_prefix" {
 ###################################################
 # TAGs
 ###################################################
-variable "customer" {
-  type = string
-}
-variable "category" {
-  type = string
-}
-variable "environment" {
-  type = string
-}
-variable "business_unit" {
-  type = string
-}
-variable "applicationname" {
-  type = string
-}
-variable "approver_name" {
-  type = string
-}
-variable "owner_name" {
-  type = string
-}
-variable "data_classification" {
-  type = string
-}
-variable "contact" {
-  type = string
-}
-# variable "region" {
-#   type        = string
-#   description = ""
-# }
+
 
