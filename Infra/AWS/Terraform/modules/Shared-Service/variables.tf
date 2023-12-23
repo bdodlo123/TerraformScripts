@@ -9,12 +9,12 @@ variable "route53_zone" {
 variable "zone_name" {
   description = "This is the name of the hosted zone."
   type        = string
-  default     = ""
+  default     = "www.myweb"
 }
 variable "root_prefix" {
   type        = string
   description = "exact prefix of the domain"
-  default     = ""
+  default     = "com"
 }
 
 ###################################################
