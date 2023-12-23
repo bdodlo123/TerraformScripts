@@ -13,7 +13,7 @@ jobs:
     permissions: read-all
       # pull-request: write
     env:
-        working-directory: /Infra/AWS/Terraform/modules/Shared-Service
+        working-directory: Infra/AWS/Terraform/modules/Shared-Service
     steps:
 
       #- name: Checkout
@@ -70,7 +70,7 @@ jobs:
     permissions: read-all
       # pull-request: write
     env:
-        working-directory: /Infra/AWS/Terraform/modules/Shared-Service
+        working-directory: Infra/AWS/Terraform/modules/Shared-Service
     steps:
       - name: Checkout
         uses: actions/checkout@v2
