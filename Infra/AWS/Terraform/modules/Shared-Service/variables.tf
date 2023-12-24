@@ -19,9 +19,46 @@ variable "root_prefix" {
 
 ###################################################
 # TAGs
-###################################################
-variable "customer"{
-type      = string
-default   = ""
+#################################################
+variable "customer" {
+  type = string
+default = "org"
 }
+variable "category" {
+  type = string
+default = "Cubicway"
+}
+variable "environment" {
+  type = string
+default = "Dev"
+}
+variable "business_unit" {
+  type = string
+default = "Tech"
+}
+variable "applicationname" {
+  type = string
+default = "Sample"
+}
+variable "approver_name" {
+  type = string
+default = "harish123@gmail.com"
+}
+variable "owner_name" {
+  type = string
+default = "raju123@gmail.com"
+}
+variable "data_classification" {
+  type = string
+default = "Test"
+}
+variable "contact" {
+  type = string
+default = "harish121@gmail.com"
+}
+# variable "region" {
+#   type        = string
+#   description = ""
+# }
+
 
